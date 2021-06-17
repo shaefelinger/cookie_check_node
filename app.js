@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
 app.get('/set', function (req, res) {
   console.log('>>set route');
   res.cookie('loggedin', 'true');
-  res.send('coockie was sent');
+  res.send('The server sent a cookie!');
   console.log('Cookies: ', req.cookies);
 });
 
