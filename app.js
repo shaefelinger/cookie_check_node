@@ -1,4 +1,3 @@
-// require('dotenv').config();
 const express = require('express');
 const app = express();
 const port = 3000; // use port 3000
@@ -8,12 +7,6 @@ app.use(cookieParser());
 
 const cors = require('cors');
 app.use(cors());
-
-// const middle1 = require('./modules/middle1.js');
-// const final = require('./modules/final.js');
-
-// app.use(middle1);
-// app.get('/', final); // just a try...
 
 app.get('/', function (req, res) {
   console.log('home route');
